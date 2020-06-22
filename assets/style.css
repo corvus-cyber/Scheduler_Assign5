@@ -25,17 +25,11 @@ textarea{
   white-space: pre-wrap;
 }
 
-.container-fluid {
-  max-width: 80%;
-  background-color: white;
-  border-radius: 5px;
-  padding: 10px; 
-  box-shadow: 0 0 20px; 
-}
 
 .time-block{
   text-align: center;
   border-radius: 15px;
+  font-family: 'Courier New', Courier, monospace; 
 }
 
 .row {

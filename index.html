@@ -20,7 +20,8 @@
     />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/moment/moment.js"></script>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -32,6 +33,7 @@
     </header>
     <div class="container">
       <!--This is where the rows for time scheduling will be placed-->
+      <!--Row for 9 am-->
       <div class="row">
         <div class="col-2 work-hr">
           <p class="time-block">0900</p>
@@ -42,6 +44,7 @@
           <i class="far fa-save"></i>
         </div>
       </div>
+      <!--Row for 10 am-->
       <div class="row">
         <div class="col-2 work-hr">
           <p class="time-block">1000</p>
@@ -52,6 +55,7 @@
           <i class="far fa-save"></i>
         </div>
       </div>
+      <!--Row for 11 am-->
       <div class="row">
         <div class="col-2 work-hr">
           <p class="time-block">1100</p>
@@ -62,11 +66,82 @@
           <i class="far fa-save"></i>
         </div>
       </div>
+      <!--Row for 12 pm-->
+      <div class="row">
+        <div class="col-2 work-hr">
+          <p class="time-block">1200</p>
+        </div>
+        <textarea class="col-9 textarea">
+        </textarea>
+        <div class="col-1 saveBtn">
+          <i class="far fa-save"></i>
+        </div>
+      </div>
+      <!--Row for 1 pm-->
+      <div class="row">
+        <div class="col-2 work-hr">
+          <p class="time-block">1300</p>
+        </div>
+        <textarea class="col-9 textarea">
+        </textarea>
+        <div class="col-1 saveBtn">
+          <i class="far fa-save"></i>
+        </div>
+      </div>
+      <!--Row for 2 pm-->
+      <div class="row">
+        <div class="col-2 work-hr">
+          <p class="time-block">1400</p>
+        </div>
+        <textarea class="col-9 textarea">
+        </textarea>
+        <div class="col-1 saveBtn">
+          <i class="far fa-save"></i>
+        </div>
+      </div>
+      <!--Row for 3 pm-->
+      <div class="row">
+        <div class="col-2 work-hr">
+          <p class="time-block">1500</p>
+        </div>
+        <textarea class="col-9 textarea">
+        </textarea>
+        <div class="col-1 saveBtn">
+          <i class="far fa-save"></i>
+        </div>
+      </div>
+      <!--Row for 4 pm-->
+      <div class="row">
+        <div class="col-2 work-hr">
+          <p class="time-block">1600</p>
+        </div>
+        <textarea class="col-9 textarea">
+        </textarea>
+        <div class="col-1 saveBtn">
+          <i class="far fa-save"></i>
+        </div>
+      </div>
+      <!--Row for 5 pm-->
+      <div class="row">
+        <div class="col-2 work-hr">
+          <p class="time-block">1700</p>
+        </div>
+        <textarea class="col-9 textarea">
+        </textarea>
+        <div class="col-1 saveBtn">
+          <i class="far fa-save"></i>
+        </div>
+      </div>
+      <!--A button that will clear all written content-->
+      <div class="row">
+        <button type="button" class="btn btn-secondary mx-auto">Remove All Content</button>
+      </div>
+    </div>
 
 
     </div>
     
   
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
