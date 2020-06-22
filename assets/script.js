@@ -20,13 +20,18 @@ $(document).ready(function(){
 
     var nowHour = moment().hours();
     for (i=0; i < 9; i++){
-        if ($(".hour").eq(i).data("hour") < nowHour){
-            ($(textarea).eq(i).addClass("past"));
+        if ($(".work-hr").eq(i).data("work-hr") < nowHour){
+            ($(".textarea").eq(i).addClass("past"));
         }
+        else if ($(".work-hr").eq(i).data("work-hr") === nowHour){
+            ($(".textarea").eq(i).addClass("present"));
+        }
+        else {($(".textarea").eq(i).addClass("future"));
+    }}
 
 
 
-    }
+    
 
 
 
