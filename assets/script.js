@@ -1,21 +1,11 @@
-//Build a calendar 
-// moment().format('MMMM Do YYYY, h:mm:ss a'); // June 18th 2020, 10:28:10 am
-// moment().format('dddd');                    // Thursday
-// moment().format("MMM Do YY");               // Jun 18th 20
-// moment().format('YYYY [escaped] YYYY');     // 2020 escaped 2020
-// moment().format();    // 2020-06-18T10:28:10-06:00
-
-
-//This will keep the javascript from running until everything is ready to go
+//Document.ready will make sure that the entire javascript is prepared before running
 $(document).ready(function(){
-    console.log("hey")
+    //call upon the moment.js to display the current date
+    var currentDate = moment().format("MMMM Do YYYY");
+    var dayOfWeek = moment().format("dddd");
+    var currentInfo = "The Current Date: " + dayOfWeek + ", " + currentDate;
+    $("#currentDay").text(currentInfo);
 
-//Using moment.js build a responsive date/time that will be presented in the jumbotron 
-const current = moment().format('MMMM Do YYYY, h:mm:ss a');
-$("#currentday").append(current)
-
-//Link the responsive time to the container so that it will respond (change color for past/present/future)
-    //I'll do this by adding class by using if statements and then adding addClass
 })
 
 
