@@ -7,12 +7,15 @@ $(document).ready(function(){
     $("#currentDay").text(currentInfo);
 
     //call upon the moment.js to display the current time
-    var nowHour = moment().format("H HH");
-    var nowMinute= moment().format("m mm");
-    var nowSec= moment().format("s ss")
-    var nowTime= nowHour + ":" +nowMinute + ":" + nowSec;
-    $("#currentTime").text(nowTime);
-
+    function updateTime(){
+        var nowHour = moment().format("HH");
+        var nowMinute= moment().format("mm");
+        var nowSec= moment().format("ss")
+        var nowTime= nowHour+ ":" + nowMinute + ":" + nowSec;
+        $("#currentTime").text(nowTime);
+    }
+        //Used setInterval to update the timer every second
+        setInterval(updateTime, 1000);
 })
 
 
