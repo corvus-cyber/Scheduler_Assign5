@@ -1,3 +1,5 @@
+
+
 //Document.ready will make sure that the entire javascript is prepared before running
 $(document).ready(function(){
     //call upon the moment.js to display the current date
@@ -34,18 +36,29 @@ $(document).ready(function(){
 
 
 $("i").click(listSave);
+showList();
+
+
+
 function listSave(){
     for(i=0; i<9; i++){
+        //If there is any value within the given text area
        var content= $("textarea").eq(i).val();
        var hour= $(".work-hr").eq(i).data("hour");
+       //And place it within the given box
        localStorage.setItem(hour, content);
     }
-
-    var saveContent= localStorage.getItem(hour)
-    $("textarea").eq(i).text(saveContent);
 }
 
-// showList();
+function showList(){
+    for(i=0; i<9; i++){
+    var hour= $(".work-hr").eq(i).data("hour");
+    var objectives= localStorage.getItem(hour);
+    $("textarea").eq(i).text(objectives)    
+    }
+
+}
+
 
 
 
