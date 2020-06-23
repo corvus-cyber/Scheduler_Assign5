@@ -21,7 +21,6 @@ $(document).ready(function(){
     var nowHour = moment().hours();
     for (i=0; i < 9; i++){
         console.log($(".work-hr").eq(i).data("hour"));
-        debugger
         if ($(".work-hr").eq(i).data("hour") < nowHour){
             ($(".textarea").eq(i).addClass("past"));
         }
@@ -31,15 +30,25 @@ $(document).ready(function(){
         else {($(".textarea").eq(i).addClass("future"));
     }}
         setInterval(nowHour, 1000);
-
-
-
-    
-
-
-
-
 })
+
+
+$("i").click(listSave);
+function listSave(){
+    for(i=0; i<9; i++){
+       var content= $("textarea").eq(i).val();
+       var hour= $(".work-hr").eq(i).data("hour");
+       localStorage.setItem(hour, content);
+    }
+
+    var saveContent= localStorage.getItem(hour)
+    $("textarea").eq(i).text(saveContent);
+}
+
+// showList();
+
+
+
 
 
 
