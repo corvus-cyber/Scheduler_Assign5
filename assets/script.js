@@ -17,10 +17,14 @@ $(document).ready(function(){
         $("#currentTime").text(nowTime);
         
     }
-        //Used setInterval to update the timer every second
+        //Used setInterval to update the clock every second
         setInterval(updateTime, 1000);
-
+    
+    //pulling info from the moment.js to create the nowHour variable
     var nowHour = moment().hours();
+    //Using a for loop to take the data from every row and use it to check against nowHour
+    //Whether it the data is greater than, less, then or equal to nowHour will decide 
+    //what color the textarea will be given
     for (i=0; i < 9; i++){
         console.log($(".work-hr").eq(i).data("hour"));
         if ($(".work-hr").eq(i).data("hour") < nowHour){
