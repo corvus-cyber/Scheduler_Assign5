@@ -16,11 +16,11 @@ The purpose of this assignment was to create a workday scheduler that would be c
 * Scoping: on multiple occasions I tried to use a variable that I declared in a function in an entirely seperate function
 * Building a live clock. I needed to use Stack overflow to discover that I could use a setInterval to run the clock function every second to create the illusion of a live clock. 
 * CSS styling: Because I didn't build the html exactly like the example I was unable to get all of the predesigned formatting in the css. I needed to go to the instructor to resolve this issue. 
-* 
+
 
 # What I Learned: 
-* How to download and apply server-side api's.
-* Other uses for setInterval
+* How to apply Jquery.
+* Other uses for setInterval. 
 * Using data within the html to distinguish them within javascript (such as for color coding rows and saving and displaying content from localStorage).
 
 # Link:
